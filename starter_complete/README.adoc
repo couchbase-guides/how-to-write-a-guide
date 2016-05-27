@@ -1,0 +1,45 @@
+:imagesdir: images
+:couchbase_version: current
+:toc:
+:project_id: gs-asp-net-mvc
+:icons: font
+:source-highlighter: prettify
+:tags: asp.net,.net,c#,mvc
+
+= Getting started with JavaScript
+
+With this guide you'll learn how to create a "Hello, World" JavaScript program.
+
+== What you'll build
+
+You'll build an HTML document that will load and run a JavaScript file. You'll be able to view that web page locally at an address like:
+
+----
+file:///C:/work/couchbase-guides/how-to-write-a-guide/starter_complete/helloworld.html
+----
+
+== What you'll need
+
+* 1-5 minutes
+* A text editor.
+* A browser.
+
+== How to complete this guide
+
+This guide assumes you are able to use a text editor and open an HTML file locally with a browser of your choice.
+
+== Build Setup
+
+Open the 
+
+== Code
+
+todo
+
+== Run
+
+todo
+
+== Summary
+
+todo

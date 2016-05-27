@@ -1,0 +1,139 @@
+:imagesdir: images
+:couchbase_version: current
+:toc:
+:project_id: gs-how-to-write-a-guide
+:icons: font
+:source-highlighter: prettify
+:tags: guides,meta
+
+= Getting started with writing a Guide
+
+With this guide you'll learn how to create a guide.
+
+== What you'll build
+
+You'll build a a guide in ASCIIdoc with the appropriate metadata, images, code imports, and a minimum of informational sections. You will build it and push it to a Github repository in the couchbase-guides organization:
+
+----
+https://github.com/couchbase-guides
+----
+
+In this demonstration, I'll be using a JavaScript "hello world" page as a hypothetical guie.
+
+== What you'll need
+
+* 15-30 minutes to complete this guide.
+* link:http://asciidocfx.com/[AsciidoxFX]
+* A browser that can run JavaScript (I'm using Chrome)
+* Images or some way to take screenshots.
+* A text editor (to write JavaScript)
+
+== How to complete this guide
+
+This guide assumes you are able to use Git.
+
+== Build Setup
+
+Create a new folder and initialize a git repository there. Copy the `starter\README.adoc.template` file from this repository to that folder. At this point, you may want to consider a .gitignore file, depending on the code/IDE that you'll be using. In this example, I do not need one.
+
+Copy the `LICENSE` files into the repo as well. `LICENSE.code.text` covers the code in guide. `LICENSE.writing.txt` covers the writing in the README.adoc file.
+
+Open the README.adoc.template in AsciidocFX. You should see a basic skeleton of a document in AsciiDoc format, and a preview pane.
+
+== Code
+
+In this section, you can start showing code examples and providing commentary. You may want to break up this section with some sub headings. Examples: `=== subheading` or `==== further subheading`.
+
+==== Meta Data
+
+Start your document with some meta data.
+
+```
+:imagesdir: images
+:couchbase_version: current
+:toc:
+:project_id: gs-intro-to-js
+:icons: font
+:source-highlighter: prettify
+:tags: javascript,ecmasscript,js
+```
+
+The `:imagesdir:` meta data indicates which folder you are going to put images in. Even if you don't plan to use images right away, it's still a good idea to add this in case you change your mind.
+
+Since these guides are Couchbase focused, it's good to indicate the Couchbase version with `:couchbase_version:`.
+
+`:toc:` indicates that a Table of Contents should be generated using the headings.
+
+`:tags:` should be useful information about the content of your guide.
+
+There are three main sections that you'll need: Build, Code, Run. You should also have a "What you'll need" and "What you'll build" sections before Build just to give an introduction. Use `==` to denote each section. For instance: `== What you'll need` or `== Code`.
+
+==== Embedding code
+
+If you want to embed literal code, use the ``` back tick. For instance, `this is inside of single back ticks`. To add multiple lines, use triple back ticks. For instance:
+
+```
+this
+is
+inside of
+triple back ticks
+```
+
+Another way to embed code is to use ASCIIdoc to include it. Here's an example of a file being included:
+
+```
+[source,javascript]
+----
+include::starter_complete/helloworld.js[]
+----
+```
+
+That will embed the entire text of `helloworld.js` in the document dynamically, like so:
+
+[source,javascript]
+----
+include::starter_complete/helloworld.js[]
+----
+
+If you can do this, it's preferable to embedding the source code. This way, as you make changes, the AsciiDoc will be updated automatically.
+
+==== Adding images
+
+Including screenshots is very helpful in creating guides, especially the "Run" portion.
+
+The AsciiDoc syntax for images is:
+
+```
+image::tree.jpg[put alt text here Alt text]
+```
+
+Earlier, we defined `:imagesdir:` meta data to "images", so that will look for `tree.png` in the images subfolder. It will render like this:
+
+image::tree.jpg[put alt text here Alt text]
+
+==== Adding links
+
+Make sure to add links to _at least_ developer.couchbase.com. The link syntax looks like:
+
+```
+link:/https://github.com/couchbaselabs/Linq2Couchbase[Linq2Couchbase]
+```
+
+Which renders like: link:/https://github.com/couchbaselabs/Linq2Couchbase[Linq2Couchbase]
+
+== Run
+
+The "Run" area is a good place to show screenshots of the completed project in action.
+
+We're going to use this section to highlight some tips to use when writing guides:
+
+* Use second person. This means "you" and "we", not "I" or "he".
+* Put class names, filenames, command line examples, etc inside of single ticks, `like so`
+* Stick to the Setup-Build-Run format
+* Create a `starter` folder and a `starter_complete` folder. In `starter`, put a barebones project that the learner will use to copy/paste from the guide into. In `starter_complete`, put the completed product.
+** The learner will have something to fall back on in case they don't something right or miss something subtle.
+** You will have completed code files to reference in your document.
+
+== Summary
+
+In this section, you can say something like "Congratulations! You've just created X." It's also a final opportunity to sum up and recommend other guides or links.
