@@ -18,6 +18,8 @@ You'll build an HTML document that will load and run a JavaScript file. You'll b
 file:///C:/work/couchbase-guides/how-to-write-a-guide/starter_complete/helloworld.html
 ----
 
+This JavaScript code will display a message in an alert box, and also in the JavaScript console.
+
 == What you'll need
 
 * 1-5 minutes
@@ -30,16 +32,33 @@ This guide assumes you are able to use a text editor and open an HTML file local
 
 == Build Setup
 
-Open the 
+Get the "starter" source code sample that we've made available. Open git bash, clone the repo using `git clone` command.
+
+From the text editor of your choice, open the source files. You won't need to make any changes to `helloworld.html`, but you will be writing code in `helloworld.js`.
 
 == Code
 
-todo
+Add this code to `helloworld.js`:
+
+[source,javascript]
+include::starter_complete/helloworld.js[]
+
+The first line of this code will write a string to the JavaScript console.
+
+The second line invokes the 'alert' dialog, which causes the browser to create popup with the text specified.
 
 == Run
 
-todo
+Now open the `helloworld.html` file in your browser. You can do this by dragging-and-dropping the HTML file into your browser. Depending on your setup and operating system, you may also be able to do this by double-clicking on the HTML file directly.
+
+When you load the page, you should immediately see an alert box output. Here is what it looks like in Chrome on Windows (your view may vary).
+
+image::screenshot1.png[]
+
+Next, open up the JavaScript console to see the message written there. How you do this will depend on your browser, but in Chrome on Windows, you can use `Ctrl-Shift-J`.
+
+image::screenshot2.png[]
 
 == Summary
 
-todo
+Congratulations! You just wrote your first JavaScript program.

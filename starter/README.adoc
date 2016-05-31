@@ -1,0 +1,42 @@
+Remove these tick marks and put in the correct meta data
+```
+:imagesdir: images
+:couchbase_version: {couchbase version here}
+{:toc: here}
+:project_id: {project id here}
+:icons: font
+:source-highlighter: prettify
+:tags: {tags here}
+```
+
+= `Title of guide here`
+
+`one sentence intro`
+
+== What you'll build
+
+`summary of the end result of this guide`
+
+== What you'll need
+
+`pre-reqs, including time, tools`
+
+== How to complete this guide
+
+`state assumptions and tips here`
+
+== `first part of Build-Code-Run`
+
+`intro for setting up a build/execution environment`
+
+== `second part of Build-Code-Run`
+
+`code snippets and the meat of the guide go here`
+
+== `third part of Build-Code-Run`
+
+`walk through the final result, show screenshots`
+
+== Summary
+
+`quick summary text, maybe links to more information`

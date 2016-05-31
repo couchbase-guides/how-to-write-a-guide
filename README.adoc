@@ -23,7 +23,7 @@ In this demonstration, I'll be using a JavaScript "hello world" page as a hypoth
 == What you'll need
 
 * 15-30 minutes to complete this guide.
-* link:http://asciidocfx.com/[AsciidoxFX]
+* link:http://asciidocfx.com/[AsciidocFX]
 * A browser that can run JavaScript (I'm using Chrome)
 * Images or some way to take screenshots.
 * A text editor (to write JavaScript)
@@ -84,7 +84,7 @@ Another way to embed code is to use ASCIIdoc to include it. Here's an example of
 ```
 [source,javascript]
 ----
-include::starter_complete/helloworld.js[]
+ include::starter_complete/helloworld.js[]
 ----
 ```
 
@@ -92,7 +92,7 @@ That will embed the entire text of `helloworld.js` in the document dynamically, 
 
 [source,javascript]
 ----
-include::starter_complete/helloworld.js[]
+include::starter_complete/starter_complete/helloworld.js[]
 ----
 
 If you can do this, it's preferable to embedding the source code. This way, as you make changes, the AsciiDoc will be updated automatically.
@@ -130,7 +130,7 @@ We're going to use this section to highlight some tips to use when writing guide
 * Use second person. This means "you" and "we", not "I" or "he".
 * Put class names, filenames, command line examples, etc inside of single ticks, `like so`
 * Stick to the Setup-Build-Run format
-* Create a `starter` folder and a `starter_complete` folder. In `starter`, put a barebones project that the learner will use to copy/paste from the guide into. In `starter_complete`, put the completed product.
+* Create a `starter` folder and a `starter_complete` folder. In `starter`, put an incomplete barebones project that the learner will use to copy/paste from the guide into. In `starter_complete`, put the completed product.
 ** The learner will have something to fall back on in case they don't something right or miss something subtle.
 ** You will have completed code files to reference in your document.
 
